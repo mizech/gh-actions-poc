@@ -7,4 +7,4 @@ jobs:
           - name: Welcome message
             run: echo "Testing, 1234 ..."
           - name: Print object
-            run: echo "${{ toJSON(job) }}"
+            run: echo "${{ toJSON(github.event) }}"
